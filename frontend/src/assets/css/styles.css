@@ -1,0 +1,22 @@
+body{
+    background-color: #25292c;
+
+}
+.bg-light-dark{
+    background-color: #2178bb;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    /* by defult is row */
+    min-height: 100vh; 
+    /* 100vh: view port height- 1 vh is 1% of screen height and 100 means fitting fully, providing the screen height page alwalys fill the entire screen, makes sure the footer stays in the bottom itself*/
+}
+.container{
+    flex:1;
+    /* container is main content not header or footer, is bootstrap layout class, felx tells the container to expand or fill in the available space */ 
+}
+/* diff btw px and vh: px is pixels, vh is view port height pixles- no matter whts the screen size the px size will be same if we denote px; vh is relative unit is not based on screen fixed height*/
+
+
+
