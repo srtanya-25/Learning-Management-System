@@ -32,13 +32,13 @@ import PublicRoute from './PublicRoute'
 function App() {
   let id = 1001
   const receiveData = (data) => {
-    console.log("Data from child:", data);
+    console.log("Data from child:", data); 
   };
   const students = [
-    { id: 1, name: "Amit", marks: 81 },
-    { id: 2, name: "Neha", marks: 74 },
-    { id: 3, name: "Karan", marks: 91 },
-    { id: 4, name: "Arjun", marks: 88 },
+    {id: 1, name: "Amit", marks: 81},
+    {id: 2, name: "Neha", marks: 74},
+    {id: 3, name: "Karan", marks: 91},
+    {id: 4, name: "Arjun", marks: 88},
   ]
   const studentName = "John"
 
@@ -54,27 +54,27 @@ function App() {
         {/* <Stock/> */}
         {/* <Result students={students}/> */}
         {/* <Teachers/> */}
-      </StudentContext.Provider>
-      {/* <InputBox/>
+        </StudentContext.Provider>
+        {/* <InputBox/>
         <MyCounter/>
         <Greeting isLoggedIn={false} name="John"/>
         <NameList/>
         <Stock/>
         <LoginForm/> */}
-      {/* <RegisterForm/> */}
-      {/* <CounterUseEffect /> */}
-      <AuthProvider>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<MainContent />} />
-            <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} /> // to load the Register component
-            <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
-            <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </AuthProvider>
+        {/* <RegisterForm/> */}
+        {/* <CounterUseEffect /> */}
+        <AuthProvider>
+          <BrowserRouter>
+            <Header/>
+            <Routes>
+              <Route path="/" element={<MainContent />}/>
+              <Route path="/register" element={<PublicRoute><Register /></PublicRoute>}/> // to load the Register component
+              <Route path="/login" element={<PublicRoute><Login /></PublicRoute>}/>
+              <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            </Routes>
+            <Footer/>
+          </BrowserRouter>
+        </AuthProvider>
     </>
   )
 }
